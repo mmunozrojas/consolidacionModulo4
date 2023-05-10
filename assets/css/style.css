@@ -1,0 +1,99 @@
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilo para la tarjeta principal */
+  .card {
+    width: 500px;
+  }
+  
+  /* Estilo para el encabezado de la tarjeta */
+  .card-header {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Estilo para los elementos de formulario */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-input {
+    border-radius: 10px;
+  }
+  
+  /* Estilo para el botón de agregar */
+  .btn-agregar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+ /* Estilo para la lista de gastos */
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lista li span {
+    font-weight: bold;
+  }
+  
+  .lista li .acciones {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lista li .acciones button {
+    border: none;
+    background-color: transparent;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .lista li .acciones button:hover {
+    color: #b80f0a;
+  }
+  
+  .nuevo-gasto {
+    -webkit-animation: aparecer 0.5s ease;
+    -moz-animation: aparecer 0.5s ease;
+    -ms-animation: aparecer 0.5s ease;
+    -o-animation: aparecer 0.5s ease;
+    animation: aparecer 0.5s ease;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .btn-eliminar {
+    margin-left: 10px;
+  }
+  
